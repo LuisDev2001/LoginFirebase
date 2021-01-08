@@ -84,8 +84,14 @@ body {
   margin: 0 3px 0 0;
   text-align: center;
 }
+.form-control-types {
+  height: auto;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
 .form-control-types.hidden {
-  display: none;
+  opacity: 0;
+  height: 0;
 }
 .form-text {
   margin: 15px 0;

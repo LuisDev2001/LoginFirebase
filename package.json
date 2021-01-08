@@ -1,0 +1,20 @@
+{
+  "name": "login-firebase",
+  "version": "1.0.0",
+  "description": "Login with firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JS",
+    "HTML",
+    "CSS",
+    "FIREBASE"
+  ],
+  "author": "Luis Quispe",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase": "8.2.2"
+  }
+}

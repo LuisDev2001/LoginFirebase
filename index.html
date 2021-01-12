@@ -5,66 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
-    <title>Login</title>
+    <title>Blogeek</title>
   </head>
   <body>
-    <div class="wrapper">
-      <section class="form-login">
-        <form action="" method="post" class="form">
-          <div class="form-image">
-            <img src="./src/img/logo.png" alt="logo formulario" />
-          </div>
-          <div class="form-control">
-            <input type="email" placeholder="Correo" />
-            <label for="" class="animation-input"></label>
-          </div>
-          <div class="form-control">
-            <input type="password" placeholder="Contraseña" />
-            <label for="" class="animation-input"></label>
-          </div>
-          <div class="form-control">
-            <button type="submit">Iniciar sesión</button>
-          </div>
-          <div class="form-control">
-            <div class="show-more-types" id="js_show-more-options">
-              Mostrar métodos de inicio de sesión
-            </div>
-          </div>
-          <div class="form-control-types hidden" id="js_options-login">
-            <div>
-              <button type="submit" class="google" id="js_google">
-                <span class="icon-google">
-                  <i class="fab fa-google"></i>
-                </span>
-                Iniciar sesión con Google
-              </button>
-            </div>
-            <div>
-              <button type="submit" class="facebook" id="js_facebook">
-                <span class="icon-facebook">
-                  <i class="fab fa-facebook-square"></i>
-                </span>
-                Iniciar sesión con Facebook
-              </button>
-            </div>
-            <div>
-              <button type="submit" class="twitter" id="js_twitter">
-                <span class="icon-twitter">
-                  <i class="fab fa-twitter-square"></i>
-                </span>
-                Iniciar sesión con Twiter
-              </button>
-            </div>
-          </div>
-          <div class="form-text">
-            <span>
-              ¿No estas registrado?
-              <a href="#">Crear una cuenta</a>
-            </span>
-          </div>
-        </form>
-      </section>
-    </div>
+    <header class="header" id="js_header">
+      <div class="wrapper">
+        <h1 class="header-title">Blog</h1>
+        <nav class="menu">
+          <ul class="menu-list">
+            <!-- <li class="menu-item singOut">
+              <div class="singOut" id="js_singOut">Cerrar sesión</div>
+            </li> -->
+            <li class="menu-item singIn">
+              <div class="singIn" id="js_singOut">Iniciar sesión</div>
+              <!-- modal de logeo -->
+              <section class="form-login hidden">
+                <form action="" method="post" class="form" id="js_form-login">
+                  <div class="form-image">
+                    <img src="./src/img/logo.png" alt="logo formulario" />
+                  </div>
+                  <div class="form-control">
+                    <input type="email" placeholder="Correo" />
+                    <label for="" class="animation-input"></label>
+                  </div>
+                  <div class="form-control">
+                    <input type="password" placeholder="Contraseña" />
+                    <label for="" class="animation-input"></label>
+                  </div>
+                  <div class="form-control">
+                    <button type="submit">Iniciar sesión</button>
+                  </div>
+                  <div class="form-control">
+                    <div class="show-more-types" id="js_show-more-options">
+                      Mostrar métodos de inicio de sesión
+                    </div>
+                  </div>
+                  <div class="form-control-types hidden" id="js_options-login">
+                    <div>
+                      <button type="submit" class="google" id="js_google">
+                        <span class="icon-google">
+                          <i class="fab fa-google"></i>
+                        </span>
+                        Iniciar sesión con Google
+                      </button>
+                    </div>
+                    <div>
+                      <button type="submit" class="facebook" id="js_facebook">
+                        <span class="icon-facebook">
+                          <i class="fab fa-facebook-square"></i>
+                        </span>
+                        Iniciar sesión con Facebook
+                      </button>
+                    </div>
+                    <div>
+                      <button type="submit" class="twitter" id="js_twitter">
+                        <span class="icon-twitter">
+                          <i class="fab fa-twitter-square"></i>
+                        </span>
+                        Iniciar sesión con Twiter
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form-text">
+                    <span>
+                      ¿No estas registrado?
+                      <a href="#">Crear una cuenta</a>
+                    </span>
+                  </div>
+                </form>
+              </section>
+            </li>
+            <li class="menu-item user hidden">
+              <section class="header-user" id="js_user-information"></section>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="wrapper main-post"></main>
 
     <!-- FIREBASE SDK -->
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
